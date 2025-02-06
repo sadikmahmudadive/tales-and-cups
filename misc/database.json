@@ -1,0 +1,120 @@
+{
+  "Category": [
+    { "Id": 0, "ImagePath": "btn_1", "Name": "Fiction" }, 
+    { "Id": 1, "ImagePath": "btn_2", "Name": "Non-Fiction" }, 
+    { "Id": 2, "ImagePath": "btn_3", "Name": "Mystery" }, 
+    { "Id": 3, "ImagePath": "btn_4", "Name": "Science Fiction" }, 
+    { "Id": 4, "ImagePath": "btn_5", "Name": "Novel" }, 
+    { "Id": 5, "ImagePath": "btn_6", "Name": "Biography" }, 
+    { "Id": 6, "ImagePath": "btn_7", "Name": "Self-Help" }, 
+    { "Id": 7, "ImagePath": "btn_8", "Name": "Romance"}
+  ],
+  "Foods": [
+    {
+      "BestFood": true,
+      "CategoryId": 0,
+      "Description": "",
+      "Id": 0,
+      "ImagePath": "https://firebasestorage.googleapis.com/v0/b/tales-and-cups.appspot.com/o/Abiskarer%20Neshay.jpg?alt=media&token=90fb327b-9004-49ff-b2b2-1ee1af6b8161",
+      "LocationId": 1,
+      "Price": 199,
+      "PriceId": 1,
+      "Star": 4.5,
+      "TimeId": 1,
+      "TimeValue": 4,
+      "Title": "Abiskarer Neshay"
+    },
+    {
+      "BestFood": true,
+      "CategoryId": 0,
+      "Description": "Indulge in the Pepperoni Lovers pizza, a carnivore's dream come true. The crust is generously topped with zesty pepperoni slices, perfectly melding with the melted mozzarella and robust tomato sauce. Each mouthful is a symphony of savory and spicy notes, making it a go-to choice for those who savor the boldness of pepperoni.",
+      "Id": 1,
+      "ImagePath": "https://firebasestorage.googleapis.com/v0/b/tales-and-cups.appspot.com/o/Agunpakhi.jpg?alt=media&token=dce42df0-fb3c-403f-9a37-b790f3676122",
+      "LocationId": 1,
+      "Price": 600,
+      "PriceId": 2,
+      "Star": 4.7,
+      "TimeId": 1,
+      "TimeValue": 7,
+      "Title": "Agunpakhi"
+    },
+    {
+      "BestFood": true,
+      "CategoryId": 0,
+      "Description": "The Veggie Supreme pizza is a colorful masterpiece that caters to vegetarian cravings. Loaded with a medley of bell peppers, onions, olives, and mushrooms, this pizza offers a symphony of textures and tastes. The combination of fresh, vibrant vegetables atop a golden crust creates a delightful and satisfying experience.",
+      "Id": 2,
+      "ImagePath": "https://firebasestorage.googleapis.com/v0/b/tales-and-cups.appspot.com/o/Bheja%20Barud.jpg?alt=media&token=c209fffb-fd4d-4aae-b153-c69a26423f2a",
+      "LocationId": 1,
+      "Price": 250,
+      "PriceId": 1,
+      "Star": 4.5,
+      "TimeId": 1,
+      "TimeValue": 4,
+      "Title": "Bheja Barud"
+    },
+    {
+      "BestFood": true,
+      "CategoryId": 0,
+      "Description": "Experience the smoky allure of the BBQ Chicken Delight pizza. Succulent pieces of BBQ-infused chicken are paired with the sweetness of red onions and the crunch of bell peppers. All of this is embraced by a delectable blend of cheeses, making every slice a journey into the world of bold barbecue flavors.",
+      "Id": 3,
+      "ImagePath": "https://firebasestorage.googleapis.com/v0/b/tales-and-cups.appspot.com/o/Kakababu%20bonam%20Chorashikari.jpg?alt=media&token=309e668b-a9cb-4836-bcc5-11077493e543",
+      "LocationId": 1,
+      "Price": 1200,
+      "PriceId": 2,
+      "Star": 4.6,
+      "TimeId": 2,
+      "TimeValue": 22,
+      "Title": "Kakababu Bonam Chorashikari"
+    }
+  ],
+  "Location": [
+    {
+      "Id": 0,
+      "loc": "Dhaka"
+    },
+    {
+      "Id": 1,
+      "loc": "Barishal"
+    },
+    {
+      "Id": 2,
+      "loc": "Khulna"
+    },
+    {
+      "Id": 3,
+      "loc": "Rajshahi"
+    },
+    {
+      "Id": 1,
+      "loc": "Chittagong"
+    }
+  ],
+  "Price": [
+    {
+      "Id": 0,
+      "Value": "99৳ - 599৳"
+    },
+    {
+      "Id": 1,
+      "Value": "599৳ - 1000৳"
+    },
+    {
+      "Id": 2,
+      "Value": "more than 1000৳"
+    }
+  ],
+  "Time": [
+    {
+      "Id": 0,
+      "Value": "1 - 7 day"
+    },
+    {
+      "Id": 1,
+      "Value": "7 - 20 day"
+    },
+    {
+      "Id": 2,
+      "Value": "more than 20 day"
+    }
+  ]
+}

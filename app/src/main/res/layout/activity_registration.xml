@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1"
+    tools:context=".Registration">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:fontFamily="@font/sen_bold"
+            android:text="Signup"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/sen"
+            android:text="Please sign up for new account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:fontFamily="@font/sen"
+            android:text="EMAIL"
+            android:textColor="@color/dark_navy_blue"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.118"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/sen"
+            android:text="PASSWORD"
+            android:textColor="@color/dark_navy_blue"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextEmail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextEmail"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmail" />
+
+        <EditText
+            android:id="@+id/editTextTextEmail"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_text_box"
+            android:ems="10"
+            android:fontFamily="@font/sen"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/dark_navy_blue"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@+id/name"
+            app:layout_constraintHorizontal_bias="0.003"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_text_box"
+            android:ems="10"
+            android:fontFamily="@font/sen"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/dark_navy_blue"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@+id/email"
+            app:layout_constraintHorizontal_bias="0.003"
+            app:layout_constraintStart_toStartOf="@+id/email"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/btn_next_orange"
+            android:fontFamily="@font/sen_bold"
+            android:text="SIGNUP"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_26sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:fontFamily="@font/sen"
+            android:text="Already Have an Account?"
+            android:textColor="@color/dark_navy_blue"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@+id/btn_signup"
+            app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:fontFamily="@font/sen_bold"
+            android:text="LOGIN"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_signup"
+            app:layout_constraintHorizontal_bias="0.269"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/sen"
+            android:text="Or"
+            android:textColor="@color/gray_blue"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@+id/login"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/btn_google"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:background="@drawable/btn_google"
+            app:layout_constraintEnd_toStartOf="@+id/btn_facebook"
+            app:layout_constraintHorizontal_bias="0.753"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <Button
+            android:id="@+id/btn_facebook"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_38sdp"
+            android:background="@drawable/btn_facebook"
+            app:layout_constraintEnd_toEndOf="@+id/login"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

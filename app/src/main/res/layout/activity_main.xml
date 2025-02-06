@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen_bold"
+                        android:text="Welcome"
+                        android:textColor="@color/orange"
+                        android:textSize="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/sen"
+                        android:text="Sadik Mahmud"
+                        android:textColor="@color/dark_navy_blue"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                    <ImageView
+                        android:id="@+id/btn_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/btn_back" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/btnFilter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:padding="8dp"
+                        android:layout_marginEnd="6dp"
+                        app:srcCompat="@drawable/ic_three_dot" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:background="@drawable/shape_search_box"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/txtSearchEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_search"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:fontFamily="@font/sen"
+                            android:hint="Search Food and Book"
+                            android:inputType="text"
+                            android:padding="8dp"
+                            android:textColor="@color/gray_blue"
+                            android:textColorHint="@color/dark_navy_blue"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/btnSearch"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:padding="3dp"
+                            app:srcCompat="@drawable/btn_search" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/btn_cart"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="8dp"
+                        android:layout_marginStart="6dp"
+                        app:srcCompat="@drawable/ic_cart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="0.333"
+                        android:background="@drawable/semi_round_box_silver_stroke"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageVie4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_location_with_round_shape" />
+
+                        <Spinner
+                            android:id="@+id/spinnerLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="0.333"
+                        android:background="@drawable/semi_round_box_silver_stroke"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_time_with_round_shape" />
+
+                        <Spinner
+                            android:id="@+id/spinnerTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="0.333"
+                        android:background="@drawable/semi_round_box_silver_stroke"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_doller_with_round_shape" />
+
+                        <Spinner
+                            android:id="@+id/spinnerPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="22sp"
+                        android:textColor="@color/dark_navy_blue"
+                        android:fontFamily="@font/sen_bold"
+                        android:text="Today's best Deals" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:textColor="@color/orange"
+                        android:fontFamily="@font/sen"
+                        android:text="View All" />
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+
+                    <ProgressBar
+                        android:id="@+id/progressBarBestDeal"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/bestDealView"
+                        app:layout_constraintStart_toStartOf="@+id/bestDealView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/bestDealView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="350dp"
+                        android:clipToPadding="false"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginStart="16dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/dark_navy_blue"
+                    android:fontFamily="@font/sen"
+                    android:text="Choose Category" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+                    <ProgressBar
+                        android:id="@+id/progressBarCategoryView"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@+id/categoryView"
+                        app:layout_constraintEnd_toEndOf="@+id/categoryView"
+                        app:layout_constraintStart_toStartOf="@+id/categoryView"
+                        app:layout_constraintTop_toTopOf="@+id/categoryView" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/categoryView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
