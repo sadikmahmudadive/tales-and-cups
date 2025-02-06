@@ -97,5 +97,5 @@ This project is licensed under the <b>MIT License</b> – see the <a href="LICEN
 
 ## 💬 Contact
 For queries, reach out via:
-- 📧 Email: <a href="mailto:your-email@example.com">your-email@example.com</a>
-- 🐦 Twitter: <a href="https://twitter.com/yourhandle" target="_blank">@yourhandle</a>
+- 📧 Email: <a href="mailto:your-siradive137@gmail.com">your-email@example.com</a>
+- 🐦 Twitter: <a href="https://twitter.com/sadik_adive" target="_blank">@yourhandle</a>
